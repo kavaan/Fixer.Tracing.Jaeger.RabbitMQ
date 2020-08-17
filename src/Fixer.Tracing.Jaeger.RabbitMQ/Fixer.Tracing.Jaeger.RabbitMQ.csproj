@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Jaeger" Version="0.4.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Fixer.MessageBrokers.RabbitMQ\src\Fixer.MessageBrokers.RabbitMQ\Fixer.MessageBrokers.RabbitMQ.csproj" />
+    <ProjectReference Include="..\..\..\Fixer\src\Fixer\Fixer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="OpenTracing">
+      <HintPath>C:\Users\Samin\.nuget\packages\opentracing\0.12.1\lib\netstandard2.0\OpenTracing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
